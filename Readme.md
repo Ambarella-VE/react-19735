@@ -6,10 +6,16 @@ Camada 19735
 
 ---
 
-### Branches
+### Clase 2
 
-- ***[afterClass1][l1]***: ejercicio de formulario en HTML con JS.
-- ***[afterClass2][l2]***: continuación del ejercicio de formulario en HTML con JS del after class 1, se reducen líneas código y se agregan más funcionalidades.
-
-[l1]: https://github.com/Ambarella-VE/react-19735/tree/afterClass1
-[l2]: https://github.com/Ambarella-VE/react-19735/tree/afterClass2
+- React "Fiber" (tecnología que usa)
+- Virtual Dom
+- Node
+- NPM
+- npx create-react-app my-app
+- cd my-app
+- npm start
+- Spread operator
+- Métodos de Array
+- Destructuring
+  
