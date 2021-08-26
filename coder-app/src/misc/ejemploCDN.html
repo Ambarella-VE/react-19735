@@ -1,0 +1,55 @@
+<!-- Ejemplo de cómo se usaría React solmente usando el CDN --> 
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React en HTML</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <div id="root2"></div>
+
+    <!-- Ejemplo React sin create-react-app -->
+    <script crossorigin src="https://unpkg.com/react@17/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+    <script>
+      const $root = document.getElementById("root");
+
+      const e = React.createElement
+
+      const Titulo = ({name}) => {
+        return e('h1', {}, `Hola ${name}`)
+      }
+
+      /* ReactDOM.render(e(Titulo, {name: 'Seba'}),$root) */
+
+      ReactDOM.render(
+        e('div', null, [
+          e(Titulo,{name: 'Seba', key: 1}),e(Titulo,{name:'María', key: 2})
+        ]), $root
+      )
+
+    </script>
+
+    <!-- Ejemplo React sin create-react-app usando babel -->
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <script  type="text/babel">
+      const $root2 = document.getElementById("root2");
+
+      const Titulo2 = (props) => {
+        return <h1>Hola {props.name}</h1>
+      }
+
+      ReactDOM.render(
+        <div>
+          <Titulo2 name="Seba"/>
+          <Titulo2 name="María"/>
+        </div>
+        , $root2
+      )
+    </script>
+    
+  </body>
+</html>
