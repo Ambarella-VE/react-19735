@@ -6,16 +6,10 @@ Camada 19735
 
 ---
 
-### Clase 2
+### Clase 3
 
-- React "Fiber" (tecnología que usa)
-- Virtual Dom
-- Node
-- NPM
-- npx create-react-app my-app
-- cd my-app
-- npm start
-- Spread operator
-- Métodos de Array
-- Destructuring
-  
+- Sugar-Syntax
+- Polyfills y retrocompatibilidad
+- Webpack
+- Transpiling
+- JSX
